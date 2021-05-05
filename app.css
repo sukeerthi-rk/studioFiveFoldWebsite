@@ -1,0 +1,723 @@
+@font-face{
+    font-family:'futura-BT-light';
+    src: url('futura-light-bt.ttf');
+}
+@font-face{
+    font-family:'futura-BT-med';
+    src:url('futurabq-medium.otf');
+}
+*{
+    font-family:'futura-BT-light';
+}
+header{
+    font-size: 5em;
+    font-weight: bolder;
+    color: black;
+    height: 5vh;
+}
+.containerhead{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0;
+    margin: 0%;
+    margin-bottom: 10%;
+}
+
+#whatwedo{
+    font-family: futura-BT-light;
+    color:rgb(172, 172, 172);
+    font-weight: 90;
+    font-size: 400%;
+}
+
+.whatwedostrong{
+    font-family:futura-BT-med;
+    color:black;
+    font-weight: 95;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    bottom: 5px;
+    left:5px;
+    right:5px;
+    justify-content:space-between;
+    height:11%;
+    width:99%;
+}
+#copyright{
+    font-size: .8em;
+    font-family: futura-BT-light;
+    color: rgb(182, 180, 180);
+    margin-top:2.9%;
+}
+#logo{
+    height:70%;
+}
+.navbar-mobile{
+    display:none;
+}
+.navbar{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: white;
+    display:inline-block;
+    padding-top:3em;
+
+  }
+  .navbar-nav{
+      display:block;
+      font-family: futura-BT-med;
+      color: rgb(73, 73, 73);
+      font-size: 12pt;
+      font-weight: 800;
+  }
+  .nav-link{
+      padding: 0.5px;
+      color: black;
+  }
+  
+.body-container{
+    margin-bottom: 2%;
+}
+
+.img-car{
+    padding:0;
+    margin-left: 10px;
+    /* margin-bottom: 80px; */
+    border: solid grey 2px;
+    /* display:inline-block; */
+}
+ 
+#carousel-inner{
+    border: solid 1px grey;
+}
+
+.carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+  }
+  .carousel-control-next{
+      padding-right: 8px;
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+ .carousel-control-prev-icon { 
+     width: 30px;
+    height: 48px;
+ }
+
+.carousel-control-next-icon { 
+    width: 30px;
+    height: 48px;
+} 
+.carousel-control-next-icon:after
+{
+    width: 30px;
+    height: 48px;
+}
+.carousel-control-prev-icon:after {
+    width: 30px;
+    height: 48px;
+} 
+.projectthumb{
+    height:215px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    /* height: auto; */
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.image-wrapper{
+    position: relative;
+    width: 50%;
+}
+
+#image-wrapper:hover .text-hover{
+    visibility: visible;
+    opacity: 1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-wrapper:hover .projectthumb {
+    opacity: 0.5;
+}
+
+.image-wrapper:hover .middle {
+    opacity: 1;
+}
+
+.text-hover{
+    /* background-color:black; */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-bottom: 0;
+}
+.carousel-caption{
+    background-color: rgba(109, 115, 110,.7);
+    color: rgb(255, 255, 255);
+    opacity:1;
+}
+.img-car-project{
+    height: 420px;
+    margin-top: 0%;
+    /* border: rgba(109, 115, 110,.5) 1px solid; */
+}
+
+.project-meta-title{
+    color:rgb(83, 83, 83);
+    font-family: 'futura-BT-med';
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+.project-meta-selector{
+    /* font-weight: 900; */
+    font-family:'futura-BT-med';
+    font-weight: 300;
+    font-size:0.9em;
+}
+
+.project-meta-attribute{
+    font-family:'futura-BT-light';
+    font-size:0.9em;
+    /* font-weight: 600; */
+    color: gray;
+}
+
+.carousel-projects-images{
+    margin-top: 2%;
+    border: solid grey 2px;
+}
+.landing-img-car{
+    height:560px;
+}
+.project-meta-description{
+    font-size:13px;
+    margin-bottom: 0;
+}
+.text-link{
+text-decoration: none;
+color: rgb(0, 0, 0);
+font-size: 16px;
+}
+.text-link:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+#copyright-mobile{
+    display: none;
+}
+
+.bi-three-dots{
+    color: black;
+    border: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+
+.navbar-nav-mobile{
+    width: 100%;
+    height: 100%;
+    /* margin-top: 400px; */
+    opacity: 1;
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+}
+.navbar-links-mobile{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    line-height: 2;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 100px;
+}
+.carousel-wrapper-class{
+    z-index: -1;
+}
+
+.project-meta-inforow{
+    z-index: -1;
+}
+.body-container-project{
+    z-index: -1;
+}
+.img-car-project{
+    z-index: -1;
+}
+.project-meta-title{
+    z-index: -1;
+}
+.body-container-about{
+    display:flex;
+    align-items: flex-start;
+}
+.our-story{
+    color:rgb(124, 124, 124);
+    font-family: 'futura-BT-med';
+    font-weight: 500;
+    font-size: 1.5em;
+
+}
+.client-showcase{
+    display: flex;
+    justify-content: space-between;
+}
+.client-img{
+    height: 130px;
+    width: 130px;
+    border: solid 2px grey;
+}
+.team-img{
+    height: 130px;
+    width: 130px;
+    border: solid 2px grey;
+}
+.team-description{
+    color:rgb(124, 124, 124);
+    font-size:13px;
+}
+.team-name{
+    margin-bottom: 0;
+    font-size:14px;
+    font-weight: 700;
+}
+.contact-form{
+    padding-top: 20px;
+    margin-top: 100px;
+    border: solid 2px rgb(156, 151, 151);
+    padding-bottom: 20px;
+}
+.write-to-us{
+    margin-top: 220px;
+}
+.google-map{
+    border: solid 2px rgb(156, 151, 151);
+    height:50%;
+    margin-top:35px;
+}
+
+@media(min-height:690px){
+    .text-link{
+        font-size: 22px;
+    }
+
+    .text-hover{
+        font-size: 22px;
+    }
+
+    .text-link{
+        font-size: 26px;
+    }
+
+    .text-hover{
+        font-size: 26px;
+    }
+
+    .projectthumb{
+        height: 300px;
+    }
+
+    .navbar-nav{
+        font-size: 1.1em;
+    }
+    .containerhead{
+        margin-bottom: 5.2%;
+    }
+    .img-car{
+        height: 650px;
+    }
+    .landing-img-car{
+        height: 650px;
+    }
+    .img-car-project .carousel-projects-images{
+        height: 450px;
+    }
+    .project-meta-title{
+        font-size: 2em;
+    }
+    .project-meta-selector{
+        font-size: 1em;
+    }
+    .project-meta-attribute{
+        font-size: 1em;
+    }
+    .project-meta-description{
+        font-size: 15px;
+    }
+}
+
+@media(min-height:780px){
+    .text-link{
+        font-size: 24px;
+    }
+
+    .text-hover{
+        font-size: 24px;
+    }
+
+    .projectthumb{
+        height: 315px;
+    }
+
+    .navbar-nav{
+        font-size: 1.2em;
+    }
+    .containerhead{
+        margin-bottom: 6%;
+    }
+    .img-car{
+        height: 725px;
+    }
+    .landing-img-car{
+        height: 725px;
+    }
+    .carousel-projects-images{
+        height: 550px;
+    }
+    .img-car-project{
+        height: 550px;
+    }
+    .project-meta-title{
+        font-size: 2.2em;
+    }
+    .project-meta-selector{
+        font-size: 1.1em;
+    }
+    .project-meta-attribute{
+        font-size: 1.1em;
+    }
+    .project-meta-description{
+        font-size: 15px;
+    }
+}
+
+@media(min-height:850px){
+    .text-link{
+        font-size: 26px;
+    }
+
+    .text-hover{
+        font-size: 26px;
+    }
+
+    .projectthumb{
+        height: 325px;
+    }
+
+    .navbar-nav{
+        font-size: 1.4em;
+    }
+    .containerhead{
+        margin-bottom: 5.2%;
+    }
+    .img-car{
+        height: 900px;
+    }
+    .landing-img-car{
+        height: 900px;
+    }
+    .carousel-projects-images{
+        height: 700px;
+    }
+    .img-car-project{
+        height: 700px;
+    }
+    .project-meta-title{
+        font-size: 2.5em;
+    }
+    .project-meta-selector{
+        font-size: 1.3em;
+    }
+    .project-meta-attribute{
+        font-size: 1.3em;
+    }
+    .project-meta-description{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:425px){
+    .projectthumb{
+        height: 200px;
+    }
+    .body-container-project{
+        z-index: -1;
+    }
+    
+}
+
+
+@media(max-width:767px){
+    .body-container-project{
+        z-index: -1;
+    }
+    .navbar-mobile{
+        display:block;
+    }
+    .navbar-collapse{
+        position:fixed;
+    }
+    
+    .navbar{
+        display:none;
+        padding-bottom: 10px;
+    }
+    footer{
+        margin-bottom:2px;
+        align-items: flex-end;
+        justify-content: flex-end;
+        /* position: absolute; */
+    }
+    .img-car{
+        margin-bottom: 55px;
+        height: 20em;
+        z-index: -1;
+        margin-left: 0;
+        border: solid grey 1px;
+    }
+    .landing-img-car{
+        height: 20em;
+    }
+    #logo{
+        margin-right: 3px;
+        justify-content: flex-end;
+    }
+    .containerhead{
+        height:40em;
+        margin-bottom: 0;
+    }
+    #whatwedo{
+        font-size: 2em;
+    }
+    #copyright{
+        position: static;
+    }
+
+    .navbar-nav-mobile{
+        width: 100%;
+        height: 100%;
+        /* margin-top: 400px; */
+        opacity: 1;
+        background-color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        z-index: 3;
+        margin: 0;
+        padding: 0;
+        color: rgb(0, 0, 0);
+    }
+    .navbar-links-mobile{
+        z-index: 3;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        line-height: 2;
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-bottom: 100px;
+    }
+    #copyright{
+        display: none;
+    }
+    #copyright-mobile{
+        display: block;
+        font-size: .8em;
+        font-family: futura-BT-light;
+        color: rgb(182, 180, 180);
+        margin: 0 0 10px 10px;
+    }
+    .navbar-mobile{
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-wrapper{
+        margin-left: 15%;
+    }
+
+    .image-wrapper{
+        z-index: -1;
+    }
+    
+    .carousel-projects-images{
+        z-index: -1;
+    }
+
+    .wrapper-project-details{
+        z-index: -1;
+    }
+
+    .img-car-project .project-name{
+        z-index: -1;
+    }
+    .carousel-wrapper-class{
+        z-index: -1;
+    }
+    
+    .project-meta-inforow{
+        z-index: -1;
+    }
+    .body-container-project{
+        z-index: -1;
+    }
+    .img-car-project{
+        z-index: -1;
+    }
+    .project-meta-title{
+        z-index: -1;
+    }
+    .project-whitespace{
+        z-index:-1;
+    }
+    .z-metadata{
+        z-index: -1;
+    }
+    .description-wrapper{
+        z-index: -1;
+    }
+    .image-carosel-project{
+        z-index: -1;
+    }
+    .project-whitespace{
+        display: none;
+    }
+    .img-car-project {
+        height: 300px;
+    }
+    .carousel-projects-images{
+        height: 300px;
+    }
+
+}
+@media all and (device-width: 768px) and (device-height: 1024px){
+    .projectthumb{
+        height: 175px;
+    }
+
+    .landing-whitespace{
+        display:none;
+    }
+    .img-car{
+        /* width:80%; */
+        margin-bottom: 15px;
+        margin-left: 25px;
+        height: 30em;
+        border: solid grey 1px;
+    }
+    .landing-img-car{
+        height: 30em;
+    }
+    #logo{
+        align-self:flex-end;
+        margin-bottom: 20px;
+    }
+    #copyright{
+        align-self:flex-end;
+        margin-bottom: 20px;
+        font-size:0.6em;
+    }
+    .containerhead{
+        margin-bottom: 15%;
+        height:100vh;
+    }
+    .carousel-project-whitespace{
+        display: block;
+    }
+    .img-car-project {
+        height: 450px;
+    }
+    .carousel-projects-images{
+        height: 450px;
+    }
+
+}
+@media all and (device-width: 1024px) and (device-height: 1366px){
+    .projectthumb{
+        height: 225px;
+    }
+
+    .landing-whitespace{
+        display:none;
+    }
+    .img-car{
+        /* width:80%; */
+        margin-bottom: 15px;
+        margin-left: 25px;
+        height: 40em;
+        border: solid grey 1px;
+    }
+    .landing-img-car{
+        height: 40em;
+    }
+    #logo{
+        align-self:flex-end;
+        margin-bottom: 20px;
+    }
+    #copyright{
+        align-self:flex-end;
+        margin-bottom: 20px;
+    }
+    .carousel-project-whitespace{
+        display: block;
+    }
+    .img-car-project {
+        height: 600px;
+    }
+    .carousel-projects-images{
+        height: 600px;
+    }
+}
+
+@media all and (device-width: 768px) and (device-height: 850px){
+    .projectthumb{
+        height: 165px;
+    }
+}
+
+@media all and (device-width: 1024px) and (device-height: 850px){
+    .projectthumb{
+        height: 200px;
+    }
+}
